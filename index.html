@@ -6,27 +6,27 @@
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
   <meta name="description"
-    content="End-to-end architectures in autonomous driving (AD) face a significant challenge in interpretability, impeding human-AI trust. Human-friendly natural language has been explored for tasks such as driving explanation and 3D captioning. However, previous works primarily focused on the paradigm of declarative interpretability, where the natural language interpretations are not grounded in the intermediate outputs of AD systems, making the interpretations only declarative. In contrast, aligned interpretability establishes a connection between language and the intermediate outputs of AD systems. Here we introduce Hint-AD, an integrated AD-language system that generates language aligned with the holistic perception-prediction-planning outputs of the AD model. By incorporating the intermediate outputs and a holistic token mixer sub-network for effective feature adaptation, Hint-AD achieves desirable accuracy, achieving state-of-the-art results in driving language tasks including driving explanation, 3D dense captioning, and command prediction. To facilitate further study on driving explanation task on nuScenes, we also introduce a human-labeled dataset, Nu-X. Codes, dataset, and models will be publicly available." />
+    content="End-to-end architectures in autonomous driving (AD) face a significant challenge in interpretability, impeding human-AI trust. Human-friendly natural language has been explored for tasks such as driving explanation and 3D captioning. However, previous works primarily focused on the paradigm of declarative interpretability, where the natural language interpretations are not grounded in the intermediate outputs of AD systems, making the interpretations only declarative. In contrast, aligned interpretability establishes a connection between language and the intermediate outputs of AD systems. Here we introduce Openbench, an integrated AD-language system that generates language aligned with the holistic perception-prediction-planning outputs of the AD model. By incorporating the intermediate outputs and a holistic token mixer sub-network for effective feature adaptation, Openbench achieves desirable accuracy, achieving state-of-the-art results in driving language tasks including driving explanation, 3D dense captioning, and command prediction. To facilitate further study on driving explanation task on nuScenes, we also introduce a human-labeled dataset, Nu-X. Codes, dataset, and models will be publicly available." />
   <meta name="keywords"
-    content="Hint-AD: Holistically Aligned Interpretability for End-to-End Autonomous Driving" />
+    content="Openbench: A New Benchmark And Baseline For Semantic Navigation In Smart Logistics" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>
-    Hint-AD | Project Page
+    Openbench | Project Page
   </title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico" />
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet" />
+  <link href1="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet" />
 
   <link rel="stylesheet" href="static/css/bulma.min.css" />
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css" />
   <link rel="stylesheet" href="static/css/bulma-slider.min.css" />
-  <link rel="stylesheet" href="static/css/fontawesome.all.min.css" />
+  <link rel="stylesheet" href1="static/css/fontawesome.all.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" />
   <link rel="stylesheet" href="static/css/index.css" />
   <link rel="stylesheet" href="https://unpkg.com/beerslider/dist/BeerSlider.css">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script src1="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src2="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
@@ -38,117 +38,117 @@
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h2 class="title is-2 publication-title">
-              Hint-AD: Holistically Aligned Interpretability for End-to-End Autonomous Driving
-            </h2>
-            <p style="color: rgb(169, 60, 60); font-size: 20px;">CoRL 2024</p>
-            <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
+<div class="column has-text-centered">
+  <h2 class="title is-2 publication-title">
+    Openbench: A New Benchmark And Baseline For Semantic Navigation In Smart Logistics
+  </h2>
+  <p style="color: rgb(169, 60, 60); font-size: 20px;">ICRA 2025</p>
 
-              <span class="author-block">
-                <a href="https://robot-k.github.io/" target="_blank">Kairui Ding</a>
-                <sup>1,3</sup>
-              ,</span>
+  <div class="is-size-5 publication-authors">
+  <!-- Paper authors 作者 -->
+  <span class="author-block">
+    Junhui Wang
+    <sup>1,2</sup>
+  ,</span>
 
-              <span class="author-block">
-                Boyuan Chen
-                <sup>1,3</sup>
-              ,</span>
+  <span class="author-block">
+    Dongjie Huo
+    <sup>3</sup>
+  ,</span>
 
-              <span class="author-block">
-                Yuchen Su
-                <sup>3</sup>
-              ,</span>
+  <span class="author-block">
+    Zehui Xu
+    <sup>4</sup>
+  ,</span>
 
-              <span class="author-block">
-                <a href="https://c7w.tech/about/" target="_blank">Huan-ang Gao</a>
-                <sup>1</sup>
-              ,</span>
+  <span class="author-block">
+    Yongliang Shi
+    <sup>2</sup>
+  ,</span>
 
-              <span class="author-block">
-                Bu Jin
-                <sup>1</sup>
-              ,</span>
+  <span class="author-block">
+    Yimin Yan
+    <sup>2</sup>
+  ,</span>
 
-              <span class="author-block">
-                Chonghao Sima
-                <sup>4</sup>
-              ,</span>
+  <span class="author-block">
+    Yuanxin Wang
+    <sup>5</sup>
+  ,</span>
 
-              <span class="author-block">
-                Xiaohui Li
-                <sup>2</sup>
-              ,</span>
+  <span class="author-block">
+    Chao Gao
+    <sup>&dagger;2</sup>
+  ,</span>
 
-              <span class="author-block">
-                Wuqiang Zhang
-                <sup>2</sup>
-              ,</span>
+  <span class="author-block">
+    Yan Qiao
+    <sup>&dagger;1</sup>
+  ,</span>
 
-              <span class="author-block">
-                Paul Barsch
-                <sup>2</sup>
-              ,</span>
+  <span class="author-block">
+    Guyue Zhou
+    <sup>2</sup>
+  </span>
+</div>
 
-              <span class="author-block">
-                <a href="https://lihongyang.info/" target="_blank">Hongyang Li</a>
-                <sup>4</sup>
-              ,</span>
+<!-- a margin of 0.5em -->
+<div style="margin: 0.5em;"></div>
+<div class="is-size-5 publication-authors">
+  <span class="author-block is-size-6">
+    <sup>1</sup> Institute of Systems Engineering and Collaborative Laboratory for Intelligent Science and Systems, Macau University of Science and Technology <br>
+    <sup>2</sup> Institute for AI Industry Research (AIR), Tsinghua University <br>
+    <sup>3</sup> College of Information Science and Technology, Beijing University of Chemical Technology <br>
+    <sup>4</sup> School of Astronautics, Harbin Institute of Technology <br>
+    <sup>5</sup> School of Mechanical and Vehicular Engineering, Beijing Institute of Technology <br>
+    <span class="eql-cntrb"><small><sup>&dagger;</sup>Indicates Corresponding Author</small></span>
+  </span>
+</div>
 
-              <span class="author-block">
-                <a href="https://sites.google.com/view/fromandto" target="_blank">Hao Zhao</a>
-                <sup>&dagger;1</sup>
-              </span>
-            </div>
-            <!-- a margin of 0.5em -->
-            <div style="margin: 0.5em;"></div>
-            <div class="is-size-5 publication-authors">
-              <span class="author-block is-size-6">
-                <sup>1</sup> Institute for AI Industry Research (AIR), Tsinghua University <br>
-                <sup>2</sup> Mercedes-Benz Group China Ltd. <br>
-                <sup>3</sup> Xingjian College, Tsinghua University <br>
-                <sup>4</sup> OpenDriveLab, Shanghai AI Lab <br>
-                <span class="eql-cntrb"><small><sup>&dagger;</sup>Indicates Corresponding Author</small></span>
-            </div>
 
-            <div class="column has-text-centered">
-              <div class="publication-links">
-                <!-- Arxiv PDF link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/pdf/2409.06702" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                    </span>
-                    <span>Paper</span>
-                  </a>
-                </span>
 
-                <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/2409.06702" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                    </span>
-                    <span>arXiv</span>
-                  </a>
-                </span>
 
-                <!-- Github link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/pdf/2409.06702" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code (Coming soon)</span>
-                  </a>
-                </span>
-              </div>
-            </div>
-          </div>
+
+
+
+
+  <div class="column has-text-centered">
+    <div class="publication-links">
+      <!-- Arxiv PDF link -->
+      <span class="link-block">
+        <a href="https://arxiv.org/pdf/2409.06702" target="_blank"
+class="external-link button is-normal is-rounded is-dark">
+<span class="icon">
+  <i class="fas fa-file-pdf"></i>
+</span>
+<span>Paper</span>
+        </a>
+      </span>
+
+      <!-- ArXiv abstract Link -->
+      <span class="link-block">
+        <a href="https://arxiv.org/abs/2409.06702" target="_blank"
+class="external-link button is-normal is-rounded is-dark">
+<span class="icon">
+  <i class="ai ai-arxiv"></i>
+</span>
+<span>arXiv</span>
+        </a>
+      </span>
+
+      <!-- Github link -->
+      <span class="link-block">
+        <a href="https://air-discover.github.io/Openbench/" target="_blank"
+class="external-link button is-normal is-rounded is-dark">
+<span class="icon">
+  <i class="fab fa-github"></i>
+</span>
+<span>Code (Coming soon)</span>
+        </a>
+      </span>
+    </div>
+  </div>
+</div>
         </div>
       </div>
     </div>
@@ -164,15 +164,15 @@
         </video>
         <!-- centering the image -->
         <!-- <div class="columns is-centered">
-          <!-- <div class="column is-four-fifths"> -->
-          <!-- <div class="publication-video"> -->
-          <!-- <img src="static/images/Teaser_cs1.jpg" width="100%" /> -->
-          <!-- </div> -->
-          <!-- </div> -->
+<!-- <div class="column is-four-fifths"> -->
+<!-- <div class="publication-video"> -->
+<!-- <img src="static/images/Teaser_cs1.jpg" width="100%" /> -->
+<!-- </div> -->
+<!-- </div> -->
         <!-- </div> -->
         <!-- <img src="static/images/Teaser_cs1.jpg" width="100%" /> -->
         <h2 class="has-text-centered is-size-6">
-         Demonstration Video of <b>Hint-AD</b>.
+         待替换的视频<b>Openbench</b>.
         </h2>
       </div>
     </div>
@@ -184,12 +184,13 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <h2 class="title is-3">Abstract</h2>
-          <div class="content has-text-justified">
-            <p>
-              End-to-end architectures in autonomous driving (AD) face a significant challenge in interpretability, impeding human-AI trust. Human-friendly natural language has been explored for tasks such as driving explanation and 3D captioning. However, previous works primarily focused on the paradigm of declarative interpretability, where the natural language interpretations are not grounded in the intermediate outputs of AD systems, making the interpretations only declarative. In contrast, aligned interpretability establishes a connection between language and the intermediate outputs of AD systems. Here we introduce Hint-AD, an integrated AD-language system that generates language aligned with the holistic perception-prediction-planning outputs of the AD model. By incorporating the intermediate outputs and a holistic token mixer sub-network for effective feature adaptation, Hint-AD achieves desirable accuracy, achieving state-of-the-art results in driving language tasks including driving explanation, 3D dense captioning, and command prediction. To facilitate further study on driving explanation task on nuScenes, we also introduce a human-labeled dataset, Nu-X. Codes, dataset, and models will be publicly available.
-            </p>
-          </div>
+<h2 class="title is-3">Abstract</h2>
+<div class="content has-text-justified">
+  <p>
+The increasing demand for efficient last-mile de- livery in smart logistics underscores the role of autonomous robots in enhancing operational efficiency and reducing costs. Traditional navigation methods, which depend on high- precision maps, are resource-intensive, while learning-based approaches often struggle with generalization in real-world scenarios. To address these challenges, this work proposes the Openstreetmap-enhanced oPen-air sEmantic Navigation (OPEN) system that combines foundation models with classic al- gorithms for scalable outdoor navigation. The system leverages OpenStreetMap (OSM) for flexible map representation, thereby eliminating the need for extensive pre-mapping efforts. It also employs Large Language Models (LLMs) to comprehend deliv- ery instructions and Vision-Language Models (VLMs) for global localization, map updates, and house number recognition. To compensate the limitations of existing benchmarks that are inadequate for assessing last-mile delivery, this work introduces a new benchmark specifically designed for outdoor navigation in residential areas, reflecting the real-world challenges faced by autonomous delivery systems. Extensive experiments validate the effectiveness of the proposed system in enhancing navigation efficiency and reliability. To facilitate further research, our code and benchmark are publicly available
+
+  </p>
+</div>
         </div>
       </div>
     </div>
@@ -199,33 +200,13 @@
   <section class="hero is-small">
     <div class="hero-body">
       <div class="container">
-        
+
         <h2 class="title is-3">Introduction & Method</h2>
 
-        <div class="columns is-centered has-text-centered"
-          style="width: 100%; display: flex; justify-content: center; align-items: center; flex-direction: column">
-          <div style="width: 70%; display: flex; justify-content: center; align-items: stretch; flex-direction: row">
-            <div style="width: 100%;">
-              <img src="static/images/teaser.png" alt="">
-            </div>
-          </div>
-          <div style="width: 70%;">
-            <b>Illustration of two paradigms for interpretability</b> of end-to-end autonomous driving (AD) systems through natural language. (a) The <i>declarative</i> interpretability does not utilize intermediate outputs from AD systems, resulting in text that merely justifies the car's driving behavior; (b) <i>Aligned</i> interpretability incorporates intermediate outputs from the AD model to align the generated language with the holistic perception-prediction-planning process.
-          </div>
-        </div>
-        <br /><br />
 
-        <div class="columns is-centered has-text-centered"
-          style="width: 100%; display: flex; justify-content: center; align-items: center; flex-direction: column">
-          <div style="width: 70%; display: flex; justify-content: center; align-items: stretch; flex-direction: row">
-            <div style="width: 100%;">
-              <img src="static/images/method_detailed.png" alt="">
-            </div>
-          </div>
-          <div style="width: 70%;">
-            <b>Framework of Hint-AD.</b> (a) Hint-AD pipeline illustration. Taking intermediate output tokens from an AD pipeline as input, a language decoder generates natural language responses. A holistic token mixer module is designed to adapt the tokens. (b) Detailed illustration of BEV blocks architecture. (c) A detailed illustration of instance blocks architecture.
-          </div>
-        </div>
+        <p><img src="images/overview.jpg" referrerpolicy="no-referrer" alt="overview"></p>
+        <p><strong><span>Fig. 1:</span></strong><span> Overview of the proposed benchmark framework. The diagram presents the simulation environments and corresponding OSM, which are provided for the implementation of semantic navigation systems. This framework necessitates the navigation system to process natural language instructions autonomously, enabling accurate navigation from the initial starting point to the designated customer&#39;s front door.</span></p>
+        <p><span>The OPEN system for autonomous last-mile delivery combines foundation models with classic algorithms to enhance semantic navigation. It employs LLMs for natural language understanding and VLMs for global localization, map updates, and house number recognition. This approach ensures reliable GPS-free navigation, improving the system&#39;s efficiency, reliability, and long-term performance.</span></p>
 
       </div>
     </div>
@@ -235,21 +216,22 @@
   <section class="hero is-small is-light">
     <div class="hero-body">
       <div class="container">
-        
+
+
+
+
         <h2 class="title is-3">Dataset</h2>
 
-        <div class="columns is-centered has-text-centered"
-          style="width: 100%; display: flex; justify-content: center; align-items: center; flex-direction: column">
-          <div style="width: 70%; display: flex; justify-content: center; align-items: stretch; flex-direction: row">
-            <div style="width: 100%;">
-              <img src="static/images/dataset.png" alt="">
-            </div>
-          </div>
-          <div style="width: 70%;">
-            <b>Illustration of Nu-X dataset</b>. Explanation serves as a guide for human learning and understanding. Particularly in the context of end-to-end autonomous driving (AD) systems, human users often seek explanations to bridge the gap between sensor inputs and AD behaviors. Currently, there is no dataset providing such explanations for nuScenes, a widely utilized dataset in AD research. To address this gap and facilitate interpretability-focused research on nuScenes, we introduce Nu-X, a comprehensive, large-scale, human-labeled explanation dataset. Nu-X offers detailed contextual information and diverse linguistic expressions for each of the 34,000 key frames in nuScenes.
-          </div>
-        </div>
-        
+
+<h2><img src="images/Simulation_last_mile_delivery.jpg" referrerpolicy="no-referrer" alt="Simulation_last_mile_delivery"></h2>
+<p><strong><span>Fig. 2:</span></strong><span> Simulation environment for last-mile delivery.</span></p>
+<p><span>Based on the gazebo simulation platform, we constructed three distinct world models of varying sizes, categorized into three levels: small, medium, and large, depending on the complexity of their environments. Each building within these models has been labeled with house numbers on their doors. Additionally, corresponding OSMs data are generated for each world model, reflecting real-world situations.</span>
+</p>
+
+
+
+
+
       </div>
     </div>
   </section>
@@ -260,203 +242,22 @@
       <div class="container">
         <!-- Paper video. -->
         <h2 class="title is-3">Results</h2>
-        
-        <div class="columns is-centered has-text-centered"
-          style="width: 100%; display: flex; justify-content: center; align-items: center; flex-direction: column">
 
-          <div style="width: 65%; display: flex; justify-content: center; align-items: stretch; flex-direction: row">
-            <div style="width: 100%;">
-              <img src="static/images/qualitative.png" alt="">
-            </div>
-          </div>
 
-          <div style="width: 70%;">
-            <b>Qualitative Results.</b> We present examples of the language output generated by Hint-AD across multiple tasks, including driving explanation, 3D dense captioning, VQA, command prediction, and four categories of alignment tasks. Captions that do not match the ground truth are colored in red.
-          </div>
 
-          <div style="margin: 1em;"></div>
 
-          <div style="width: 85%;">
-            <b>Comparison with baselines.</b> "Inter. outputs" represents intermediate outputs. All methods are adapted for BEV visual representation and employ mixed dataset training. Hint-UniAD and Hint-VAD, as two implementations of Hint-AD on different AD models, outperform baselines across four language tasks in the AD context.
-          </div>
 
-          <!-- Table with training and testing object categories -->
-          <table border="1">
-            <tr>
-              <th rowspan="2"><strong>Input</strong></th>
-              <th rowspan="2"><strong>Method</strong></th>
-              <th colspan="5">Nu-X</th>
-              <th colspan="4">TOD</th>
-              <th colspan="3">NuScenes-QA</th>
-              <th rowspan="2">Command Acc.</th>
-            </tr>
-            <tr>
-              <td><strong>C</strong></td>
-              <td><strong>B</strong></td>
-              <td><strong>M</strong></td>
-              <td><strong>R</strong></td>
-              <td><strong>G</strong></td>
-              <td><strong>C</strong></td>
-              <td><strong>B</strong></td>
-              <td><strong>M</strong></td>
-              <td><strong>R</strong></td>
-              <td><strong>H0</strong></td>
-              <td><strong>H1</strong></td>
-              <td><strong>All</strong></td>
-            </tr>
-            <tr>
-              <td rowspan="2">Image + 6-shot examples</td>
-              <td>GPT-4o</td>
-              <td>19.0</td>
-              <td>3.95</td>
-              <td>10.3</td>
-              <td>24.9</td>
-              <td>5.22</td>
-              <td>160.8</td>
-              <td>50.4</td>
-              <td>31.6</td>
-              <td>43.5</td>
-              <td>42.0</td>
-              <td>34.7</td>
-              <td>37.1</td>
-              <td>75.4</td>
-            </tr>
-            <tr>
-              <td>Gemini 1.5</td>
-              <td>17.6</td>
-              <td>3.43</td>
-              <td>9.3</td>
-              <td>23.4</td>
-              <td>5.03</td>
-              <td>169.7</td>
-              <td>53.6</td>
-              <td>33.4</td>
-              <td>45.9</td>
-              <td>40.5</td>
-              <td>32.9</td>
-              <td>35.4</td>
-              <td>80.9</td>
-            </tr>
-            <tr>
-              <td rowspan="2">BEV(2D)</td>
-              <td>ADAPT</td>
-              <td>17.7</td>
-              <td>2.06</td>
-              <td>12.8</td>
-              <td>27.9</td>
-              <td>5.79</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>51.0</td>
-              <td>44.2</td>
-              <td>46.4</td>
-              <td>79.3</td>
-            </tr>
-            <tr>
-              <td>BEV+Adapter</td>
-              <td>18.6</td>
-              <td>3.47</td>
-              <td>11.3</td>
-              <td>24.5</td>
-              <td>6.27</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>51.8</td>
-              <td>45.6</td>
-              <td>47.7</td>
-              <td>81.1</td>
-            </tr>
-            <tr>
-              <td rowspan="3">BEV(2D) + Bounding Boxes</td>
-              <td>BEVDet+MCAN</td>
-              <td>13.2</td>
-              <td>2.91</td>
-              <td>10.3</td>
-              <td>24.5</td>
-              <td>5.04</td>
-              <td>104.9</td>
-              <td>50.1</td>
-              <td>43.0</td>
-              <td>68.0</td>
-              <td><strong>56.2</strong></td>
-              <td>46.7</td>
-              <td>49.9</td>
-              <td>80.7</td>
-            </tr>
-            <tr>
-              <td>Vote2Cap-DETR</td>
-              <td>15.3</td>
-              <td>2.61</td>
-              <td>10.9</td>
-              <td>24.2</td>
-              <td>5.33</td>
-              <td>110.1</td>
-              <td>48.0</td>
-              <td>44.4</td>
-              <td>67.8</td>
-              <td>51.2</td>
-              <td>44.9</td>
-              <td>47.0</td>
-              <td>76.5</td>
-            </tr>
-            <tr>
-              <td>TOD</td>
-              <td>14.5</td>
-              <td>2.45</td>
-              <td>10.5</td>
-              <td>23.0</td>
-              <td>5.10</td>
-              <td>120.3</td>
-              <td>51.5</td>
-              <td>45.1</td>
-              <td>70.1</td>
-              <td>53.0</td>
-              <td>45.1</td>
-              <td>49.0</td>
-              <td>78.2</td>
-            </tr>
-            <tr>
-              <td rowspan="2">BEV(2D) + Inter. outputs</td>
-              <td><strong>Hint-UniAD (Ours)</strong></td>
-              <td>21.7</td>
-              <td><strong>4.20</strong></td>
-              <td>12.7</td>
-              <td>27.0</td>
-              <td>7.20</td>
-              <td><strong>342.6</strong></td>
-              <td><strong>71.9</strong></td>
-              <td><strong>48.0</strong></td>
-              <td><strong>85.4</strong></td>
-              <td><strong>56.2</strong></td>
-              <td>47.5</td>
-              <td>50.4</td>
-              <td><strong>83.0</strong></td>
-            </tr>
-            <tr>
-              <td><strong>Hint-VAD (Ours)</strong></td>
-              <td><strong>22.4</strong></td>
-              <td>4.18</td>
-              <td><strong>13.2</strong></td>
-              <td><strong>27.6</strong></td>
-              <td><strong>7.44</strong></td>
-              <td>263.7</td>
-              <td>67.6</td>
-              <td>47.5</td>
-              <td>79.4</td>
-              <td>55.4</td>
-              <td><strong>48.0</strong></td>
-              <td><strong>50.5</strong></td>
-              <td>82.3</td>
-            </tr>
-          </table>
-          
-          <div style="margin: 1em;"></div>
+        <p><img src="images/flow.jpg" referrerpolicy="no-referrer" alt="Overview of the OPEN system"></p>
+        <p>&nbsp;</p>
+        <p><strong><span>Fig. 3:</span></strong><span> Overview of the OPEN system for autonomous last-mile delivery. The system initiates with a natural language delivery request, processed by a task planning module powered by an LLM. This module interacts with OSM to extract destination details and generates a structured task sequence. The robot autonomously decides between navigation and exploration modes, generating waypoints for execution by a classical planner.</span></p>
+        <p><span>The proposed OPEN system achieves success rates of 100%, 100%, and 60% in small, medium, and large environments, respectively, significantly outperforming baseline methods. The system demonstrates improved navigation efficiency and reliability in both simulated and real-world experiments.</span>
+        </p>
 
-      </div>
+<!-- Table with training and testing object categories -->
+
+<div style="margin: 1em;"></div>
+
+
     </div>
   </section>
   <!-- End youtube video -->
@@ -467,11 +268,20 @@
       <h2 class="title">BibTeX</h2>
       If you find our work useful in your research, please consider citing:
       <div style="margin: 0.5em;"></div>
-      <pre><code>@inproceedings{dinghint,
-      title={Hint-AD: Holistically Aligned Interpretability in End-to-End Autonomous Driving},
-      author={Ding, Kairui and Chen, Boyuan and Su, Yuchen and Gao, Huan-ang and Jin, Bu and Sima, Chonghao and Li, Xiaohui and Zhang, Wuqiang and Barsch, Paul and Li, Hongyang and others},
-      booktitle={8th Annual Conference on Robot Learning}
-      }</code></pre>
+
+
+
+      <pre><code>@inproceedings{wangopenbench,
+  title={Openbench: A New Benchmark And Baseline For Semantic Navigation In Smart Logistics},
+  author={Wang, Junhui and Huo, Dongjie and Xu, Zehui and Shi, Yongliang and Yan, Yimin and Wang, Yuanxin and Gao, Chao and Qiao, Yan and Zhou, Guyue},
+  booktitle={ICRA 2025},
+  year={2025}
+}
+    </code></pre>
+
+
+
+
     </div>
   </section>
   <!--End BibTex citation -->
