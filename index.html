@@ -78,12 +78,12 @@
 
   <span class="author-block">
     Chao Gao
-    <sup>&dagger;2</sup>
+    <sup>2,&dagger;</sup>
   ,</span>
 
   <span class="author-block">
     Yan Qiao
-    <sup>&dagger;1</sup>
+    <sup>1,&dagger;</sup>
   ,</span>
 
   <span class="author-block">
@@ -188,8 +188,7 @@ class="external-link button is-normal is-rounded is-dark">
 <h2 class="title is-3">Abstract</h2>
 <div class="content has-text-justified">
   <p>
-The increasing demand for efficient last-mile de- livery in smart logistics underscores the role of autonomous robots in enhancing operational efficiency and reducing costs. Traditional navigation methods, which depend on high- precision maps, are resource-intensive, while learning-based approaches often struggle with generalization in real-world scenarios. To address these challenges, this work proposes the Openstreetmap-enhanced oPen-air sEmantic Navigation (OPEN) system that combines foundation models with classic al- gorithms for scalable outdoor navigation. The system leverages OpenStreetMap (OSM) for flexible map representation, thereby eliminating the need for extensive pre-mapping efforts. It also employs Large Language Models (LLMs) to comprehend deliv- ery instructions and Vision-Language Models (VLMs) for global localization, map updates, and house number recognition. To compensate the limitations of existing benchmarks that are inadequate for assessing last-mile delivery, this work introduces a new benchmark specifically designed for outdoor navigation in residential areas, reflecting the real-world challenges faced by autonomous delivery systems. Extensive experiments validate the effectiveness of the proposed system in enhancing navigation efficiency and reliability. To facilitate further research, our code and benchmark are publicly available
-
+    The increasing demand for efficient last-mile delivery in smart logistics underscores the role of autonomous robots in enhancing operational efficiency and reducing costs. Traditional navigation methods, which depend on high-precision maps, are resource-intensive, while learning-based approaches often struggle with generalization in real-world scenarios. To address these challenges, this work proposes the Openstreetmap-enhanced oPen-air sEmantic Navigation (OPEN) system that combines foundation models with classic algorithms for scalable outdoor navigation. The system uses off-the-shelf OpenStreetMap (OSM) for flexible map representation, thereby eliminating the need for extensive pre-mapping efforts. It also employs Large Language Models (LLMs) to comprehend delivery instructions and Vision-Language Models (VLMs) for global localization, map updates, and house number recognition. To compensate the limitations of existing benchmarks that are inadequate for assessing last-mile delivery, this work introduces a new benchmark specifically designed for outdoor navigation in residential areas, reflecting the real-world challenges faced by autonomous delivery systems. Extensive simulations and real-world trials demonstrate the proposed system's efficacy in enhancing navigation efficiency and reliability. To facilitate further research, our code and benchmark are publicly available.
   </p>
 </div>
         </div>
@@ -202,11 +201,11 @@ The increasing demand for efficient last-mile de- livery in smart logistics unde
     <div class="hero-body">
       <div class="container">
 
-        <h2 class="title is-3">Introduction & Method</h2>
+        <h2 class="title is-3">Benchmark Overview</h2>
 
 
         <p><img src="images/overview.jpg" referrerpolicy="no-referrer" alt="overview"></p>
-        <p><strong><span>Fig. 1:</span></strong><span> Overview of the proposed benchmark framework. The diagram presents the simulation environments and corresponding OSM, which are provided for the implementation of semantic navigation systems. This framework necessitates the navigation system to process natural language instructions autonomously, enabling accurate navigation from the initial starting point to the designated customer&#39;s front door.</span></p>
+        <p><strong><span>Overview of the proposed benchmark framework.</span></strong><span> The diagram presents the simulation environments and corresponding OSM, which are provided for the implementation of semantic navigation systems. This framework necessitates the navigation system to process natural language instructions autonomously, enabling accurate navigation from the initial starting point to the designated customer&#39;s front door.</span></p>
         <p><span>The OPEN system for autonomous last-mile delivery combines foundation models with classic algorithms to enhance semantic navigation. It employs LLMs for natural language understanding and VLMs for global localization, map updates, and house number recognition. This approach ensures reliable GPS-free navigation, improving the system&#39;s efficiency, reliability, and long-term performance.</span></p>
 
       </div>
@@ -221,13 +220,11 @@ The increasing demand for efficient last-mile de- livery in smart logistics unde
 
 
 
-        <h2 class="title is-3">Dataset</h2>
+        <h2 class="title is-3">Simulation Environments</h2>
 
 
 <h2><img src="images/Simulation_last_mile_delivery.jpg" referrerpolicy="no-referrer" alt="Simulation_last_mile_delivery"></h2>
-<p><strong><span>Fig. 2:</span></strong><span> Simulation environment for last-mile delivery.</span></p>
-<p><span>Based on the gazebo simulation platform, we constructed three distinct world models of varying sizes, categorized into three levels: small, medium, and large, depending on the complexity of their environments. Each building within these models has been labeled with house numbers on their doors. Additionally, corresponding OSMs data are generated for each world model, reflecting real-world situations.</span>
-</p>
+<p><strong><span>Simulation environment for last-mile delivery.</span></strong><span> Based on the gazebo simulation platform, we constructed three distinct world models of varying sizes, categorized into three levels: small, medium, and large, depending on the complexity of their environments. Each building within these models has been labeled with house numbers on their doors. Additionally, corresponding OSMs data are generated for each world model, reflecting real-world situations.</span></p>
 
 
 
@@ -242,7 +239,7 @@ The increasing demand for efficient last-mile de- livery in smart logistics unde
     <div class="hero-body">
       <div class="container">
         <!-- Paper video. -->
-        <h2 class="title is-3">Results</h2>
+        <h2 class="title is-3">Baseline Overview</h2>
 
 
 
@@ -250,9 +247,7 @@ The increasing demand for efficient last-mile de- livery in smart logistics unde
 
         <p><img src="images/flow.jpg" referrerpolicy="no-referrer" alt="Overview of the OPEN system"></p>
         <p>&nbsp;</p>
-        <p><strong><span>Fig. 3:</span></strong><span> Overview of the OPEN system for autonomous last-mile delivery. The system initiates with a natural language delivery request, processed by a task planning module powered by an LLM. This module interacts with OSM to extract destination details and generates a structured task sequence. The robot autonomously decides between navigation and exploration modes, generating waypoints for execution by a classical planner.</span></p>
-        <p><span>The proposed OPEN system achieves success rates of 100%, 100%, and 60% in small, medium, and large environments, respectively, significantly outperforming baseline methods. The system demonstrates improved navigation efficiency and reliability in both simulated and real-world experiments.</span>
-        </p>
+        <p><strong><span>Overview of the OPEN system for autonomous last-mile delivery.</span></strong><span> The system initiates with a natural language delivery request, processed by a task planning module powered by an LLM. This module interacts with OSM to extract destination details and generates a structured task sequence. The robot autonomously decides between navigation and exploration modes, generating waypoints for execution by a classical planner.</span></p>
 
 <!-- Table with training and testing object categories -->
 
