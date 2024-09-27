@@ -175,7 +175,7 @@ class="external-link button is-normal is-rounded is-dark">
   <section class="hero teaser">
     <div class="container is-max-desktop">
       <div class="hero-body" style="text-align: center;">
-        <h2 class="title is-3">Experimental Results</h2>
+        <h2 class="title is-3">Experimental Video</h2>
         <video poster="" id="tree" autoplay controls muted loop height="100%">
           <!-- Your video here -->
           <source src="static/video/ICRA25_0773_VI_i.mp4" type="video/mp4" />
@@ -205,16 +205,15 @@ class="external-link button is-normal is-rounded is-dark">
   <section class="hero is-small">
     <div class="hero-body">
       <div class="container">
-  
         <h2 class="title is-3 has-text-centered">Benchmark Overview</h2>
-  
-        <p><img src="images/overview.jpg" referrerpolicy="no-referrer" alt="overview"></p>
+        <p class="has-text-centered">
+          <img src="svg/overview.svg" referrerpolicy="no-referrer" alt="overview">
+        </p>
         <p><strong><span>Overview of the proposed benchmark framework.</span></strong>
-        <span> The diagram presents the simulation environments and corresponding OSM, which are provided for the implementation of semantic navigation systems. This framework necessitates the navigation system to process natural language instructions autonomously, enabling accurate navigation from the initial starting point to the designated customer's front door.</span></p>
-  
+        <span>The diagram presents the simulation environments and corresponding OSM, which are provided for the implementation of semantic navigation systems. This framework necessitates the navigation system to process natural language instructions autonomously, enabling accurate navigation from the initial starting point to the designated customer's front door.</span></p>
       </div>
     </div>
-  </section>
+  </section>  
   
 
 
@@ -226,9 +225,9 @@ class="external-link button is-normal is-rounded is-dark">
 
 
         <h2 class="title is-3 has-text-centered">Simulation Environments</h2>
-
-
-<h2><img src="images/Simulation_last_mile_delivery.jpg" referrerpolicy="no-referrer" alt="Simulation_last_mile_delivery"></h2>
+        <p class="has-text-centered">
+          <img src="svg/sim_env.svg" referrerpolicy="no-referrer" alt="sim_nav">
+        </p>
 <p><strong><span>Simulation environment for last-mile delivery.</span></strong><span> Based on the gazebo simulation platform, we constructed three distinct world models of varying sizes, categorized into three levels: small, medium, and large, depending on the complexity of their environments. Each building within these models has been labeled with house numbers on their doors. Additionally, corresponding OSMs data are generated for each world model, reflecting real-world situations.</span></p>
 
 
@@ -250,7 +249,9 @@ class="external-link button is-normal is-rounded is-dark">
 
 
 
-        <p><img src="images/flow.jpg" referrerpolicy="no-referrer" alt="Overview of the OPEN system"></p>
+        <p class="has-text-centered">
+          <img src="svg/navigation_framework.svg" referrerpolicy="no-referrer" alt="navigation_framework">
+        </p>
         <p>&nbsp;</p>
         <p><strong><span>Overview of the OPEN system for autonomous last-mile delivery.</span></strong><span> The system initiates with a natural language delivery request, processed by a task planning module powered by an LLM. This module interacts with OSM to extract destination details and generates a structured task sequence. The robot autonomously decides between navigation and exploration modes, generating waypoints for execution by a classical planner.</span></p>
 
@@ -262,6 +263,19 @@ class="external-link button is-normal is-rounded is-dark">
     </div>
   </section>
   <!-- End youtube video -->
+
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3 has-text-centered">Experiments</h2>
+        <p class="has-text-centered">
+          <img src="svg/real_nav.svg" referrerpolicy="no-referrer" alt="real_nav">
+        </p>
+        <p><strong><span>Illustration of the real-world experiment.</span></strong>
+        <span>The top-left part presents the OSM and target buildings. The bottom-left part displays the delivery instructions. The right side of the figure shows the navigation trajectories of different methods.</span></p>
+      </div>
+    </div>
+  </section>  
 
   <!--BibTex citation -->
   <section class="section" id="BibTeX">
