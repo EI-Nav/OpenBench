@@ -170,13 +170,15 @@
       <h2 class="title">BibTeX</h2>
       <p>If you find our work useful in your research, please consider citing:</p>
       <div style="margin: 0.5em;"></div>
-      <pre><code>@inproceedings{wangopenbench,
-    title={Openbench: A New Benchmark and Baseline for Semantic Navigation in Smart Logistics},
-    author={Wang, Junhui and Huo, Dongjie and Xu, Zehui and Shi, Yongliang and Yan, Yimin and Wang, Yuanxin and Gao, Chao and Qiao, Yan and Zhou, Guyue},
-    booktitle={XXX},
-    year={2025}
-  }
-      </code></pre>
+      <pre><code>@misc{wang2025openbenchnewbenchmarkbaseline,
+        title={OpenBench: A New Benchmark and Baseline for Semantic Navigation in Smart Logistics}, 
+        author={Junhui Wang and Dongjie Huo and Zehui Xu and Yongliang Shi and Yimin Yan and Yuanxin Wang and Chao Gao and Yan Qiao and Guyue Zhou},
+        year={2025},
+        eprint={2502.09238},
+        archivePrefix={arXiv},
+        primaryClass={cs.RO},
+        url={https://arxiv.org/abs/2502.09238}
+      }</code></pre>
     </div>
   </section>  
 
@@ -194,6 +196,58 @@
     new BeerSlider(document.getElementById('slider9'), { start: '40' });
     new BeerSlider(document.getElementById('slider10'), { start: '40' });
   </script>
+
+  <style>
+    /* 基础样式 */
+    .container {
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    img, video {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* 响应式布局 */
+    @media screen and (max-width: 768px) {
+      .publication-title {
+        font-size: 1.5rem !important;
+        line-height: 1.4;
+      }
+      
+      .publication-authors {
+        font-size: 0.9rem !important;
+      }
+      
+      .author-block {
+        display: inline-block;
+        margin-bottom: 5px;
+      }
+
+      pre {
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        font-size: 14px;
+      }
+
+      .hero-body {
+        padding: 2rem 1rem;
+      }
+    }
+
+    /* 桌面端优化 */
+    @media screen and (min-width: 769px) {
+      .container {
+        max-width: 1200px;
+      }
+
+      .publication-title {
+        font-size: 2rem;
+      }
+    }
+  </style>
 </body>
 
 </html>
